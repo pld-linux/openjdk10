@@ -37,6 +37,7 @@ Patch2:		x32.patch
 Patch3:		aarch64.patch
 Patch4:		build.patch
 Patch5:		glibc-2.34.patch
+Patch6:		gcc11.patch
 URL:		http://openjdk.java.net/
 BuildRequires:	/usr/bin/jar
 BuildRequires:	alsa-lib-devel
@@ -365,6 +366,7 @@ Przykłady dla OpenJDK.
 %endif
 %patch4 -p1
 %patch5 -p1
+%patch6 -p1
 
 %build
 # Make sure we have /proc mounted - otherwise idlc will fail later.
