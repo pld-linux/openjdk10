@@ -1,3 +1,5 @@
+#
+# Conditional build:
 %bcond_with	bootstrap	# build a bootstrap version, using icedtea6
 %bcond_without	cacerts		# don't include the default CA certificates
 
@@ -245,6 +247,7 @@ Summary(pl.UTF-8):	OpenJDK - środowisko uruchomieniowe - obsługa X11
 Group:		Development/Languages/Java
 Requires:	%{name}-jre-base = %{version}-%{release}
 Requires:	%{name}-jre-base-freetype = %{version}-%{release}
+Obsoletes:	openjdk10-jre-X11 < 10.0.2.13
 
 %description jre-base-X11
 X11 support for OpenJDK runtime environment built using free software
