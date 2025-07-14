@@ -355,15 +355,15 @@ Przykłady dla OpenJDK.
 %prep
 %setup -qn jdk10u-jdk-%{ver_u}+%{ver_b}
 
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
+%patch -P0 -p1
+%patch -P1 -p1
+%patch -P2 -p1
 %ifarch aarch64
-%patch3 -p1
+%patch -P3 -p1
 %endif
-%patch4 -p1
-%patch5 -p1
-%patch6 -p1
+%patch -P4 -p1
+%patch -P5 -p1
+%patch -P6 -p1
 
 %build
 # Make sure we have /proc mounted - otherwise idlc will fail later.
