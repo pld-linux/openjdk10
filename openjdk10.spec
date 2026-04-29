@@ -41,7 +41,6 @@ Patch4:		build.patch
 Patch5:		glibc-2.34.patch
 Patch6:		gcc11.patch
 URL:		http://openjdk.java.net/
-BuildRequires:	/usr/bin/jar
 BuildRequires:	alsa-lib-devel
 BuildRequires:	ant
 BuildRequires:	autoconf
